@@ -1,0 +1,22 @@
+{
+  "name": "command-line-word-guess",
+  "version": "1.0.0",
+  "description": "A command line version of hangman",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeyvon2434/Command-Line-Word-Guess.git"
+  },
+  "author": "Joseph Von Edwins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joeyvon2434/Command-Line-Word-Guess/issues"
+  },
+  "homepage": "https://github.com/joeyvon2434/Command-Line-Word-Guess#readme",
+  "dependencies": {
+    "inquirer": "^6.0.0"
+  }
+}
