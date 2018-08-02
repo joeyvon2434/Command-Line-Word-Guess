@@ -67,6 +67,7 @@ function playGame(newWord, incorrect) {
             }; //end if statement checking if n
         }
 
+        //checks if the play has won or lost the game, then procedes to letter selection
     if (incorrect > 0 && winGame == false) {
         console.log('\nYou have ' + incorrect + ' incorrect guesses remaining.\n');
         inquirer.prompt([{
@@ -83,6 +84,7 @@ function playGame(newWord, incorrect) {
                 }
             };
 
+            //checks the players guess then calls the functions based on right or wrong choices
             if (correctGuess == true) {
                 console.log('\nCorrect!\n');
                 playGame(newWord, incorrect);
@@ -93,10 +95,12 @@ function playGame(newWord, incorrect) {
             }
         })
 
+        //displays the necessary responses for a win
     } else if (winGame == true) {
         console.log('\nCongratulations! You win.\n')
         beginGame();
 
+        //displays the responses for a loss and shows the word
     } else {
         console.log('\nSorry, you are out of guesses. You lose.\n');
 
