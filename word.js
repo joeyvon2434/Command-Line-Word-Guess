@@ -22,6 +22,12 @@ var Word = function() {
             this.word[i].letterGuessed(guess);
         }; //end for loop to check guessed lettters
     }; //end check letter function
+    this.loseGame = function () {
+        for (var i = 0; i< this.word.length; i++) {
+            this.word[i].letterLose();
+            this.word[i].displayLetter();
+        };
+    };
 }; //end Word constructor
 
 module.exports = Word;

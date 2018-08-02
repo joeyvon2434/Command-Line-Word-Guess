@@ -24,7 +24,7 @@ function beginGame() {
     inquirer.prompt([{
         name: "play",
         type: "confirm",
-        message: "Would you like to play a word guess game?"
+        message: "\nWould you like to play a word guess game?"
     }]).then(function (answers) {
         if (answers.play) {
             var newWord = new Word();
@@ -98,7 +98,10 @@ function playGame(newWord, incorrect) {
         beginGame();
 
     } else {
-        console.log('Sorry, you are out of guesses. You lose.');
+        console.log('\nSorry, you are out of guesses. You lose.\n');
+
+        newWord.loseGame();
+        newWord.showWord();
         beginGame();
     }
 }; //end play game function

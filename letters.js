@@ -22,6 +22,10 @@ var Letter = function (name) {
             this.displayLetter();
         };
     }; // end letterGuessed function
+    this.letterLose = function () {
+        this.guessed = true;
+        this.displayLetter();
+    };
 
 }; //end of constructor
 
